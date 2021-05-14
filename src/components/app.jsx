@@ -9,7 +9,9 @@ class App extends Component {
     super(props)
 
     this.state = {
-      flatArray: flats
+      flatArray: flats,
+      lat: 0,
+      lng: 0
     };
   }
 
@@ -20,7 +22,7 @@ class App extends Component {
           <FlatList flats={this.state.flatArray} />
         </div>
         <div className="map-container">
-          <SimpleMap />
+          <SimpleMap lat={this.state.lat} lng={this.state.lng}/>
         </div>
       </div>
     );
