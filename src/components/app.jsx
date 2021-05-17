@@ -20,7 +20,6 @@ class App extends Component {
       lat: lat,
       lng: lng
     });
-    this.handleMap = this.handleMap.bind(this);
   }
 
   render() {

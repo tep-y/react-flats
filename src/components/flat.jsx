@@ -6,12 +6,12 @@ class Flat extends Component {
   }
 
   render() {
-    const src = `${this.props.imgUrl}`;
+    const src = `${this.props.flat.imageUrl}`;
     return(
-      <div className="card" onClick={this.handleClick} style={{ background: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2))", backgroundImage: `url("${src}")` }}>
-        <div className="card-category">{this.props.price} {this.props.currency}</div>
+      <div className="card" onClick={this.handleClick} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("${src}")` }}>
+        <div className="card-category">{this.props.flat.price} {this.props.flat.priceCurrency}</div>
         <div className="card-description">
-          <h2>{this.props.name}</h2>
+          <h2>{this.props.flat.name}</h2>
         </div>
         <a href="#" className="card-link"></a>
       </div>
