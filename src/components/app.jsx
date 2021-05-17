@@ -10,19 +10,27 @@ class App extends Component {
 
     this.state = {
       flatArray: flats,
-      lat: 0,
-      lng: 0
+      lat: 34.0522,
+      lng: -118.2437
     };
+  }
+
+  handleMap = (lat, lng) => {
+    this.setState({
+      lat: lat,
+      lng: lng
+    });
+    this.handleMap = this.handleMap.bind(this);
   }
 
   render() {
     return (
       <div>
         <div className="flat-list">
-          <FlatList flats={this.state.flatArray} />
+          <FlatList flats={this.state.flatArray} handleMap={this.handleMap}/>
         </div>
         <div className="map-container">
-          <SimpleMap lat={this.state.lat} lng={this.state.lng}/>
+          <SimpleMap lat={this.state.lat} lng={this.state.lng} />
         </div>
       </div>
     );

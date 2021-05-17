@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Flat extends Component {
   handleClick = () => {
-    console.log(`${this.props.lat}`);
+    this.props.handleMap(this.props.lat, this.props.lng);
   }
 
   render() {
