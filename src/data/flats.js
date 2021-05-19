@@ -46,6 +46,22 @@ const flats = [
     priceCurrency: "EUR",
     lat: 48.827855,
     lng: 2.350774
+  },
+  {
+    name: "Lovely Mtl home",
+    imageUrl: "https://www.mtlblog.com/u/2018/08/13/48db32d9544c1f4cd5143309821a07ef61c913a7.jpg_1200x630.jpg",
+    price: 90,
+    priceCurrency: "EUR",
+    lat: 45.5035,
+    lng: -73.5685
+  },
+  {
+    name: "Toronto apartment",
+    imageUrl: "https://media.blogto.com/articles/20171125-furnished-apartments-toronto.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70",
+    price: 114,
+    priceCurrency: "EUR",
+    lat: 43.6548,
+    lng: -79.3883
   }
 ];
 
